@@ -1,0 +1,71 @@
+[2026-04-14T23:39:54Z] === ENRICH ITERATION 1 START | repo=psf/black sha=c6755bb7 ===
+[2026-04-14T23:39:54Z] [iter=1] PHASE START: enrich repo=psf/black sha=c6755bb7 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c6755bb7-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c6755bb741b6481d6b3d3bb563c83fa060db96c9.nq.gz
+[2026-04-14T23:40:02Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-14T23:41:04Z] [iter=1] AST store loaded triples=6562148 load_secs=60 mem_mb=969 MB
+[2026-04-14T23:41:04Z] [iter=1] Step 2: Finding LSP targets mem_mb=969 MB
+[2026-04-14T23:41:06Z] [iter=1] LSP targets found call_sites=8013 imports=640 extends=57 implements=0 secs=2
+[2026-04-14T23:41:08Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=969 MB
+[2026-04-14T23:41:47Z] [iter=1] Position index built positions=471241 nodes_with_types=622704 secs=39 mem_mb=1227 MB
+[2026-04-14T23:41:47Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1227 MB already_completed_types=[] already_completed_files=0
+[2026-04-14T23:41:47Z] [iter=1] Resolving target type target_type=call_site count=8013
+[2026-04-14T23:41:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.9 files_done=0 resolved=0 errors=0 current=src/black/trans.py
+[2026-04-14T23:57:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.2 files_done=1 resolved=105 errors=347 current=tests/test_black.py
+[2026-04-15T00:30:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.0 files_done=2 resolved=723 errors=1112 current=src/black/mode.py
+[2026-04-15T00:32:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.3 files_done=5 resolved=787 errors=1141 current=tests/data/cases/line_ranges_indentation.py
+[2026-04-15T00:33:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.9 files_done=10 resolved=931 errors=1177 current=src/black/__init__.py
+[2026-04-15T00:43:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.7 files_done=11 resolved=1061 errors=1398 current=src/blackd/__init__.py
+[2026-04-15T00:45:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.5 files_done=12 resolved=1109 errors=1441 current=tests/data/cases/context_managers_autodetect_39.py
+[2026-04-15T00:48:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.8 files_done=15 resolved=1153 errors=1514 current=tests/data/cases/preview_hug_parens_with_braces_and_square_brackets.py
+[2026-04-15T00:51:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.6 files_done=17 resolved=1199 errors=1578 current=src/black/handle_ipynb_magics.py
+[2026-04-15T00:53:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.7 files_done=18 resolved=1238 errors=1626 current=src/black/ranges.py
+[2026-04-15T00:56:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.6 files_done=19 resolved=1272 errors=1692 current=tests/data/cases/preview_long_dict_values.py
+[2026-04-15T00:57:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.9 files_done=21 resolved=1294 errors=1721 current=src/black/parsing.py
+[2026-04-15T00:59:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.3 files_done=22 resolved=1329 errors=1753 current=src/black/numerics.py
+[2026-04-15T00:59:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.9 files_done=23 resolved=1329 errors=1768 current=tests/test_blackd.py
+[2026-04-15T01:07:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.2 files_done=24 resolved=1360 errors=1933 current=tests/data/cases/fmtonoff4.py
+[2026-04-15T01:10:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.2 files_done=27 resolved=1412 errors=2001 current=tests/data/cases/skip_magic_trailing_comma.py
+[2026-04-15T01:11:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.3 files_done=29 resolved=1484 errors=2026 current=src/blib2to3/pytree.py
+[2026-04-15T01:14:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.3 files_done=30 resolved=1545 errors=2094 current=tests/optional.py
+[2026-04-15T01:15:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.4 files_done=31 resolved=1561 errors=2119 current=src/black/linegen.py
+[2026-04-15T01:30:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.4 files_done=32 resolved=1687 errors=2458 current=tests/data/cases/pep_654_style.py
+[2026-04-15T01:34:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.6 files_done=34 resolved=1736 errors=2553 current=tests/data/cases/preview_simplify_power_operator_hugging.py
+[2026-04-15T01:38:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.8 files_done=36 resolved=1792 errors=2649 current=tests/data/cases/line_ranges_basic.py
+[2026-04-15T01:39:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.0 files_done=44 resolved=1847 errors=2678 current=src/blib2to3/pgen2/parse.py
+[2026-04-15T01:41:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.6 files_done=45 resolved=1854 errors=2715 current=src/black/output.py
+[2026-04-15T01:42:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.4 files_done=46 resolved=1865 errors=2733 current=scripts/release.py
+[2026-04-15T01:44:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.4 files_done=47 resolved=1879 errors=2778 current=tests/data/cases/pep604_union_types_line_breaks.py
+[2026-04-15T01:48:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.4 files_done=51 resolved=1970 errors=2871 current=tests/data/cases/context_managers_39.py
+[2026-04-15T01:50:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.3 files_done=53 resolved=1973 errors=2914 current=tests/data/miscellaneous/string_quotes.py
+[2026-04-15T01:51:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.9 files_done=57 resolved=2007 errors=2950 current=action/main.py
+[2026-04-15T01:52:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.9 files_done=58 resolved=2057 errors=2974 current=tests/data/cases/fmtonoff5.py
+[2026-04-15T01:54:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.0 files_done=60 resolved=2093 errors=3023 current=tests/data/cases/remove_await_parens.py
+[2026-04-15T01:55:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.6 files_done=63 resolved=2149 errors=3037 current=tests/data/cases/pattern_matching_generic.py
+[2026-04-15T01:56:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.3 files_done=64 resolved=2152 errors=3053 current=tests/data/cases/multiline_strings.py
+[2026-04-15T01:56:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.0 files_done=67 resolved=2166 errors=3069 current=scripts/release_tests.py
+[2026-04-15T01:57:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.6 files_done=68 resolved=2175 errors=3083 current=src/blib2to3/pgen2/tokenize.py
+[2026-04-15T01:58:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.3 files_done=70 resolved=2184 errors=3098 current=tests/data/cases/trailing_commas_in_leading_parts.py
+[2026-04-15T01:59:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.4 files_done=73 resolved=2190 errors=3123 current=tests/data/cases/fmtonoff.py
+[2026-04-15T01:59:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.9 files_done=76 resolved=2208 errors=3135 current=tests/data/cases/line_ranges_fmt_off_decorator.py
+[2026-04-15T02:00:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.7 files_done=79 resolved=2234 errors=3154 current=tests/data/cases/preview_hug_parens_with_braces_and_square_brackets_no_ll1.py
+[2026-04-15T02:01:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.5 files_done=89 resolved=2331 errors=3171 current=tests/test_ranges.py
+[2026-04-15T02:03:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.3 files_done=93 resolved=2391 errors=3214 current=tests/data/cases/comments3.py
+[2026-04-15T02:04:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.2 files_done=99 resolved=2422 errors=3231 current=tests/data/cases/comments5.py
+[2026-04-15T02:04:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.7 files_done=102 resolved=2447 errors=3243 current=tests/data/cases/comments_in_double_parens.py
+[2026-04-15T02:05:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.2 files_done=107 resolved=2474 errors=3253 current=tests/data/cases/composition_no_trailing_comma.py
+[2026-04-15T02:05:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.9 files_done=109 resolved=2490 errors=3266 current=tests/data/cases/pep_572.py
+[2026-04-15T02:06:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.4 files_done=113 resolved=2498 errors=3277 current=tests/data/cases/parenthesized_context_managers.py
+[2026-04-15T02:06:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.0 files_done=121 resolved=2528 errors=3292 current=tests/data/cases/comments9.py
+[2026-04-15T02:08:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=148.2 files_done=127 resolved=2593 errors=3319 current=tests/data/line_ranges_formatted/basic.py
+[2026-04-15T02:08:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=148.8 files_done=135 resolved=2606 errors=3331 current=tests/data/miscellaneous/async_as_identifier.py
+[2026-04-15T02:09:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=149.3 files_done=139 resolved=2613 errors=3344 current=tests/data/cases/context_managers_autodetect_38.py
+[2026-04-15T02:10:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.2 files_done=145 resolved=2630 errors=3364 current=tests/data/cases/fmtskip12.py
+[2026-04-15T02:10:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.7 files_done=157 resolved=2675 errors=3376 current=tests/data/cases/line_ranges_diff_edge_case.py
+[2026-04-15T02:11:06Z] [iter=1] Target type resolved target_type=call_site resolved=2736 errors=3385 secs=8959 mem_mb=1268 MB
+[2026-04-15T02:11:06Z] [iter=1] Resolving target type target_type=import_statement count=640
+[2026-04-15T02:11:08Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=151.2 files_done=6 resolved=104 errors=0 current=scripts/release_tests.py
+[2026-04-15T02:11:12Z] [iter=1] Target type resolved target_type=import_statement resolved=505 errors=0 secs=6 mem_mb=1268 MB
+[2026-04-15T02:11:12Z] [iter=1] Resolving target type target_type=extends_clause count=57
+[2026-04-15T02:11:14Z] [iter=1] Target type resolved target_type=extends_clause resolved=53 errors=0 secs=2 mem_mb=1268 MB
+[2026-04-15T02:11:27Z] [iter=1] Step 5: Writing final enrichment file triples=80205
+[2026-04-15T02:11:29Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/c6755bb741b6481d6b3d3bb563c83fa060db96c9.nq.gz size_kb=2394
+[2026-04-15T02:11:29Z] [iter=1] PHASE END: enrich elapsed_s=9095 elapsed_min=151.6 total_triples=80205
